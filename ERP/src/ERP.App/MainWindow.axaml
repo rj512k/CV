@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="700"
+        x:Class="ERP.App.MainWindow"
+        Title="ERP">
+  <DockPanel>
+    <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="8">
+      <Button x:Name="ProductsNav" Content="Products" Margin="0,0,8,0"/>
+      <Button x:Name="CustomersNav" Content="Customers" Margin="0,0,8,0"/>
+      <Button x:Name="SalesNav" Content="Sales" Margin="0,0,8,0"/>
+      <Button x:Name="ReportsNav" Content="Reports" Margin="0,0,8,0"/>
+      <Separator Width="16"/>
+      <Button x:Name="LogoutBtn" Content="Logout"/>
+    </StackPanel>
+
+    <ContentControl Content="{Binding CurrentViewModel}"/>
+  </DockPanel>
+</Window>

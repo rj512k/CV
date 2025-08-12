@@ -1,0 +1,27 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ERP.App.Views.CustomersView">
+  <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,*">
+    <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Customers" FontSize="18" Margin="0,0,0,8"/>
+    <DataGrid Grid.Row="1" Grid.Column="0" ItemsSource="{Binding Customers}" AutoGenerateColumns="False" Margin="0,0,8,0">
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="Id" Binding="{Binding Id}" IsReadOnly="True" Width="60"/>
+        <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
+        <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="200"/>
+        <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="160"/>
+      </DataGrid.Columns>
+    </DataGrid>
+    <StackPanel Grid.Row="1" Grid.Column="1" Width="260">
+      <TextBlock Text="Name"/>
+      <TextBox x:Name="NameBox"/>
+      <TextBlock Text="Email" Margin="0,8,0,0"/>
+      <TextBox x:Name="EmailBox"/>
+      <TextBlock Text="Phone" Margin="0,8,0,0"/>
+      <TextBox x:Name="PhoneBox"/>
+      <StackPanel Orientation="Horizontal" Margin="0,12,0,0">
+        <Button x:Name="AddBtn" Content="Add" Width="80"/>
+        <Button x:Name="RefreshBtn" Content="Refresh" Width="80" Margin="8,0,0,0"/>
+      </StackPanel>
+    </StackPanel>
+  </Grid>
+</UserControl>
