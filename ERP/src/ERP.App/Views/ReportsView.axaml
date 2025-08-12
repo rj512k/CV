@@ -1,0 +1,35 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ERP.App.Views.ReportsView">
+  <DockPanel>
+    <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,8">
+      <Button x:Name="ExportSalesExcel" Content="Export Sales (Excel)" Margin="0,0,8,0"/>
+      <Button x:Name="ExportSalesPdf" Content="Export Sales (PDF)" Margin="0,0,8,0"/>
+      <Button x:Name="ExportInventoryExcel" Content="Export Inventory (Excel)" Margin="0,0,8,0"/>
+      <Button x:Name="ExportInventoryPdf" Content="Export Inventory (PDF)"/>
+    </StackPanel>
+    <TabControl>
+      <TabItem Header="Sales">
+        <DataGrid ItemsSource="{Binding Sales}" AutoGenerateColumns="False">
+          <DataGrid.Columns>
+            <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="80"/>
+            <DataGridTextColumn Header="Date" Binding="{Binding DateUtc}" Width="180"/>
+            <DataGridTextColumn Header="Customer" Binding="{Binding Customer.Name}" Width="*"/>
+            <DataGridTextColumn Header="Total" Binding="{Binding TotalAmount}" Width="120"/>
+          </DataGrid.Columns>
+        </DataGrid>
+      </TabItem>
+      <TabItem Header="Inventory">
+        <DataGrid ItemsSource="{Binding Inventory}" AutoGenerateColumns="False">
+          <DataGrid.Columns>
+            <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="80"/>
+            <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
+            <DataGridTextColumn Header="SKU" Binding="{Binding Sku}" Width="180"/>
+            <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="120"/>
+            <DataGridTextColumn Header="Stock" Binding="{Binding StockQuantity}" Width="120"/>
+          </DataGrid.Columns>
+        </DataGrid>
+      </TabItem>
+    </TabControl>
+  </DockPanel>
+</UserControl>

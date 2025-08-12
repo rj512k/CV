@@ -1,0 +1,12 @@
+/workspace/ERP/src/ERP.Domain/bin/Debug/net8.0/ERP.Domain.deps.json
+/workspace/ERP/src/ERP.Domain/bin/Debug/net8.0/ERP.Domain.dll
+/workspace/ERP/src/ERP.Domain/bin/Debug/net8.0/ERP.Domain.pdb
+/workspace/ERP/src/ERP.Domain/obj/Debug/net8.0/ERP.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/ERP/src/ERP.Domain/obj/Debug/net8.0/ERP.Domain.AssemblyInfoInputs.cache
+/workspace/ERP/src/ERP.Domain/obj/Debug/net8.0/ERP.Domain.AssemblyInfo.cs
+/workspace/ERP/src/ERP.Domain/obj/Debug/net8.0/ERP.Domain.csproj.CoreCompileInputs.cache
+/workspace/ERP/src/ERP.Domain/obj/Debug/net8.0/ERP.Domain.sourcelink.json
+/workspace/ERP/src/ERP.Domain/obj/Debug/net8.0/ERP.Domain.dll
+/workspace/ERP/src/ERP.Domain/obj/Debug/net8.0/refint/ERP.Domain.dll
+/workspace/ERP/src/ERP.Domain/obj/Debug/net8.0/ERP.Domain.pdb
+/workspace/ERP/src/ERP.Domain/obj/Debug/net8.0/ref/ERP.Domain.dll

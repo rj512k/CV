@@ -1,0 +1,18 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ERP.App.Views.LoginView">
+  <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*">
+    <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Sign in" FontSize="20" Margin="0,0,0,12"/>
+
+    <TextBlock Grid.Row="1" Grid.Column="0" Text="Username" VerticalAlignment="Center" Margin="0,0,8,0"/>
+    <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Username, Mode=TwoWay}" Width="220"/>
+
+    <TextBlock Grid.Row="2" Grid.Column="0" Text="Password" VerticalAlignment="Center" Margin="0,8,8,0"/>
+    <TextBox Grid.Row="2" Grid.Column="1" PasswordChar="*" Text="{Binding Password, Mode=TwoWay}" Width="220" Margin="0,8,0,0"/>
+
+    <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="0,12,0,0">
+      <Button x:Name="SignInButton" Content="Sign in" Width="100"/>
+      <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" Margin="12,0,0,0"/>
+    </StackPanel>
+  </Grid>
+</UserControl>
